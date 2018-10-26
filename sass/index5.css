@@ -1,11 +1,187 @@
-main {
-  flex: 1;
-  overflow: auto;
-  background: #fff; }
-
-footer .five {
-  color: #b59b72; }
-  footer .five i {
-    color: #b59b72 !important; }
+.all {
+  height: 100%;
+  display: flex;
+  flex-direction: column; }
+  .all .colorBox {
+    background-image: linear-gradient(to bottom, #418b8e, #edf4f4);
+    overflow: hidden;
+    width: 100%;
+    height: 205px;
+    position: relative;
+    z-index: 1; }
+    .all .colorBox header {
+      position: relative;
+      height: 160px;
+      letter-spacing: .8px;
+      background-image: linear-gradient(to bottom, #3c8589, #77aea9);
+      border-bottom-left-radius: 50%;
+      border-bottom-right-radius: 50%;
+      z-index: 2;
+      text-align: center; }
+      .all .colorBox header .s1 {
+        text-align: center;
+        padding: 3.5px 14px 0;
+        overflow: hidden; }
+        .all .colorBox header .s1 .photo {
+          width: 36px;
+          height: 38px;
+          float: left; }
+        .all .colorBox header .s1 p {
+          color: #dfc198;
+          font-size: 16px;
+          padding-right: 18px; }
+          .all .colorBox header .s1 p img {
+            margin-left: 10px;
+            position: relative;
+            top: 2px;
+            margin-top: 12px; }
+        .all .colorBox header .s1 #siblingImg {
+          position: absolute;
+          width: 24px;
+          height: 8px;
+          top: 20px;
+          right: 55px; }
+        .all .colorBox header .s1 .rightImg {
+          width: 20px;
+          height: 20px;
+          position: absolute;
+          right: 14px;
+          top: 15px; }
+      .all .colorBox header .pig {
+        position: absolute;
+        left: 90px;
+        top: 70px; }
+      .all .colorBox header .player-photo {
+        border-radius: 50%;
+        border-bottom-right-radius: 0;
+        margin-top: 10px; }
+      .all .colorBox header .clear {
+        padding-left: 55px; }
+        .all .colorBox header .clear .name {
+          font-size: 16px;
+          font-weight: 500; }
+        .all .colorBox header .clear .sty {
+          font-size: 10px;
+          background-color: #fff;
+          color: #78c9d3;
+          border-radius: 4px;
+          padding: 1px 4px; }
+        .all .colorBox header .clear i {
+          font-size: 10px;
+          background-color: #fff;
+          color: #78c9d3;
+          border-radius: 4px;
+          padding: 3px 3px !important; }
+      .all .colorBox header .status {
+        font-size: 12px;
+        margin-top: 2px; }
+        .all .colorBox header .status img {
+          margin-right: 8px; }
+    .all .colorBox .nav {
+      display: flex;
+      height: 45px; }
+      .all .colorBox .nav div {
+        flex: 1;
+        text-align: center;
+        padding-top: 10px; }
+      .all .colorBox .nav .first {
+        color: #53a6a1; }
+      .all .colorBox .nav .footercolor {
+        display: block;
+        width: 12px;
+        height: 2px;
+        background-color: #53a6a1;
+        position: absolute;
+        bottom: 6px;
+        left: 56.5px;
+        -webkit-border-radius: 2px;
+        -moz-border-radius: 2px;
+        border-radius: 2px; }
+  .all main {
+    flex: 1;
+    overflow: auto;
+    background: #fff; }
+    .all main .page {
+      padding-bottom: 14px;
+      padding-top: 12px;
+      border-top: 1px solid #e6e6e6;
+      border-bottom: 8px solid #edeff0;
+      overflow: hidden; }
+      .all main .page .page-imgBox {
+        width: 127px;
+        text-align: center;
+        border-right: 1px solid #e8eaeb;
+        color: #b9a27b;
+        font-size: 12px;
+        float: left;
+        margin-top: 10px; }
+        .all main .page .page-imgBox p {
+          margin-top: 8px; }
+      .all main .page .right-box {
+        width: 247px;
+        float: right;
+        text-align: center;
+        font-size: 14px; }
+        .all main .page .right-box .top {
+          display: flex; }
+          .all main .page .right-box .top div {
+            flex: 1;
+            color: #968060; }
+            .all main .page .right-box .top div span {
+              color: #b59b72;
+              margin-left: 6px; }
+        .all main .page .right-box .floor {
+          display: flex;
+          margin-right: 10px;
+          margin-top: 10px; }
+          .all main .page .right-box .floor .right-clear {
+            position: relative;
+            top: 15px;
+            right: 2px; }
+          .all main .page .right-box .floor div {
+            flex: 1;
+            color: #7a7a7a;
+            font-size: 12px; }
+            .all main .page .right-box .floor div img {
+              width: 38px;
+              height: 45px; }
+            .all main .page .right-box .floor div .first {
+              width: 45px;
+              height: 42px; }
+    .all main .expl {
+      letter-spacing: .6px; }
+      .all main .expl .expl-header {
+        height: 40px;
+        line-height: 40px;
+        position: relative;
+        border-bottom: 1px solid #e6e6e6;
+        font-size: 15px; }
+        .all main .expl .expl-header img {
+          vertical-align: middle;
+          position: relative;
+          top: -2px;
+          margin-right: 10px; }
+        .all main .expl .expl-header .right-clear {
+          position: absolute;
+          right: 2px;
+          top: 15px; }
+        .all main .expl .expl-header span {
+          color: #b59b72; }
+      .all main .expl .all-explBox {
+        height: 45px;
+        line-height: 45px;
+        padding: 0 12px;
+        border-bottom: 1px solid #e6e6e6;
+        position: relative; }
+        .all main .expl .all-explBox span {
+          margin-right: 6px; }
+        .all main .expl .all-explBox .head {
+          position: absolute;
+          right: 0;
+          top: 11px; }
+  .all footer .five {
+    color: #b59b72; }
+    .all footer .five i {
+      color: #b59b72 !important; }
 
 /*# sourceMappingURL=index5.css.map */
