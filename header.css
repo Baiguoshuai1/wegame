@@ -1,0 +1,44 @@
+.all {
+  height: 100%;
+  display: flex;
+  flex-direction: column; }
+  .all header {
+    height: 45px;
+    padding: 3.5px 14px;
+    overflow: hidden;
+    position: relative;
+    border-bottom: 1px solid #e6e6e6;
+    font-size: 16px; }
+    .all header img {
+      width: 36px;
+      height: 38px;
+      float: left;
+      margin-right: 23px; }
+    .all header .rightImg {
+      position: absolute;
+      right: -12px;
+      top: 16px;
+      width: 31px;
+      height: 20px;
+      z-index: 10; }
+    .all header .s1 {
+      height: 100%;
+      line-height: 36px;
+      color: #7e8b8d; }
+      .all header .s1 .swiper-wrapper {
+        height: 100%; }
+      .all header .s1 .first {
+        color: #53a6a1; }
+        .all header .s1 .first span {
+          display: block;
+          width: 12px;
+          height: 2px;
+          background-color: #53a6a1;
+          position: absolute;
+          bottom: 4px;
+          left: 9px;
+          -webkit-border-radius: 2px;
+          -moz-border-radius: 2px;
+          border-radius: 2px; }
+
+/*# sourceMappingURL=header.css.map */

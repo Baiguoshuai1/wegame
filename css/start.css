@@ -1,0 +1,43 @@
+body {
+  background-color: #1e82d2;
+}
+body #bgI {
+  width: 100%;
+  height: 100%;
+  background-image: url(../img/1.png);
+  background-size: cover;
+  position: fixed;
+  z-index: 100;
+}
+body #bgI .btnImg {
+  width: 270px;
+  height: 55px;
+  position: absolute;
+  left: 50%;
+  top: 70%;
+  transform: translate(-50%, 0);
+  z-index: 100;
+}
+body #bgI p {
+  position: absolute;
+  left: 50%;
+  top: 80%;
+  z-index: 100;
+  transform: translate(-50%, 0);
+  color: #caad70;
+}
+body #bgI p img {
+  width: 6px;
+  height: 11px;
+  margin-left: 5px;
+}
+body #bgI .fugai {
+  width: 100%;
+  height: 170px;
+  background-image: linear-gradient(to bottom, #09192b, #030b13);
+  position: absolute;
+  bottom: 0;
+  z-index: 10;
+}
+
+/*# sourceMappingURL=start.css.map */

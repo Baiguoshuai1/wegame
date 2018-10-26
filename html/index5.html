@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <link rel="stylesheet" href="../css/swiper.min.css">
+    <link rel="stylesheet" href="../css/base.css">
+    <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="../css/index5.css">
+    <link rel="stylesheet" href="../css/footer.css">
+    <title>index</title>
+</head>
+<body>
+<div class="all">
+    <header>
+        <div class="s1">
+            <img src="../img/tooltip3.png" class="photo">
+            <div class="first" num="0">
+                <input type="text" placeholder="找你喜欢的商品" class="search"><i class="iconfont searchJ">&#xe637;</i>
+            </div>
+        </div>
+        <img src="../img/shopcar.png" id="siblingImg">
+        <img src="../img/hh.png"  class="rightImg">
+    </header>
+    <main>
+
+    </main>
+    <footer>
+        <div b="1">
+            <i class="iconfont">&#xe65d;</i>
+            <p>资讯</p>
+        </div>
+        <div b="2" >
+            <i class="iconfont">&#xe519;</i>
+            <p>萌友</p>
+        </div>
+        <div b="3">
+            <i class="iconfont">&#xe687;</i>
+            <p>电视台</p>
+        </div>
+        <div b="4">
+            <i class="iconfont">&#xe62c;</i>
+            <p>商城</p>
+        </div>
+        <div b="5" class="five">
+            <i class="iconfont">&#xe6aa;</i>
+            <p>战绩</p>
+        </div>
+    </footer>
+</div>
+</body>
+</html>
+<script src="../js/jquery-3.3.1.min.js"></script>
+<script src="../js/swiper.min.js"></script>
+<script src="../js/pub.js"></script>
+<script language="JavaScript">
+    $(function(){
+        $(".s1").children("div").each(function(){
+            $(this).click(function(){
+                $(this)[0].style.color="#53a6a1"
+                $(this).siblings().css({
+                    color:"#7e8b8d"
+                })
+                $(".footercolor").animate({
+                    left:60*$(this).attr("num")+160+"px"
+                },200)
+            })
+        })
+        var swiper = new Swiper('.s2', {
+            spaceBetween: 8,
+            loop: true,
+            slidesPerView: 'auto',
+            centeredSlides: true,
+            autoplay: {
+                delay: 2000,
+                disableOnInteraction: false,
+            },
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            on: {
+                slideChangeTransitionStart: function(){
+                    let here=this.activeIndex
+                    if(here==6){
+                        here=3;
+                    }else if(here==2){
+                        here=5
+                    }
+                    $(".ceil").html(function(){
+                        return  here-2;
+                    })
+                }
+            }
+        });
+
+        // let translateX=Number($(".swiper-wrapper")[0].style.transform.substring(13,17))
+
+
+    })
+
+
+</script>

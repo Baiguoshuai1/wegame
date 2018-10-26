@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <link rel="stylesheet" href="../css/swiper.min.css">
+    <link rel="stylesheet" href="../css/base.css">
+    <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="../css/index4.css">
+    <link rel="stylesheet" href="../css/footer.css">
+    <title>index</title>
+</head>
+<body>
+<div class="all">
+    <header>
+        <div class="s1">
+            <img src="../img/tooltip3.png" class="photo">
+            <div class="first" num="0">
+                <input type="text" placeholder="找你喜欢的商品" class="search"><i class="iconfont searchJ">&#xe637;</i>
+            </div>
+        </div>
+        <img src="../img/shopcar.png" id="siblingImg">
+        <img src="../img/hh.png"  class="rightImg">
+    </header>
+    <main>
+        <!-- Swiper -->
+        <div class="swiper-container s2">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide sli1" >
+                    <img src="../img/L1.png">
+                </div>
+                <div class="swiper-slide sli2" >
+                    <img src="../img/L2.png">
+                </div>
+                <div class="swiper-slide sli3" >
+                    <img src="../img/L3.png">
+                </div>
+                <div class="swiper-slide sli3" >
+                    <img src="../img/L4.png">
+                </div>
+            </div>
+            <!-- Add Pagination -->
+            <div class="swiper-pagination"></div>
+        </div>
+        <div class="TuB-box">
+            <div>
+                <img src="../img/q1.png">
+                <p>英雄</p>
+            </div>
+            <div>
+                <img src="../img/q2.png">
+                <p>皮肤</p>
+            </div>
+            <div>
+                <img src="../img/q3.png">
+                <p>守卫/图标</p>
+            </div>
+            <div>
+                <img src="../img/q4.png">
+                <p>礼包</p>
+            </div>
+            <div>
+                <img src="../img/q5.png">
+                <p>周边</p>
+            </div>
+
+        </div>
+        <div class="content">
+            <p class="title">最新上架<img src="../img/jj.png" class="jj"></p>
+            <div class="content-left">
+                <img src="../img/c1.png" width="227" height="173">
+            </div>
+            <div class="content-right">
+                <img src="../img/c2.png">
+                <img src="../img/c3.png" class="last">
+            </div>
+        </div>
+        <div class="content content-box2">
+            <p class="title">什么值得买<img src="../img/jj.png" class="jj"></p>
+            <div class="imgBox">
+                <div>
+                    <img src="../img/buy1.png">
+                </div>
+                <div>
+                    <img src="../img/buy2.png">
+                </div>
+            </div>
+        </div>
+        <div class="content content-box3">
+            <p class="title">推荐英雄</p>
+            <img src="../img/y1.png">
+            <img src="../img/y2.png">
+            <img src="../img/y3.png">
+        </div>
+        <div class="content content-box3 noborder">
+            <p class="title">推荐皮肤</p>
+            <img src="../img/y4.png">
+            <img src="../img/y5.png">
+            <img src="../img/y6.png">
+        </div>
+        <div class="content content-box3 noborder">
+            <p class="title">推荐周边</p>
+            <img src="../img/y7.png">
+            <img src="../img/y8.png">
+        </div>
+    </main>
+    <footer>
+        <div b="1">
+            <i class="iconfont">&#xe65d;</i>
+            <p>资讯</p>
+        </div>
+        <div b="2" >
+            <i class="iconfont">&#xe519;</i>
+            <p>萌友</p>
+        </div>
+        <div b="3">
+            <i class="iconfont">&#xe687;</i>
+            <p>电视台</p>
+        </div>
+        <div b="4" class="four">
+            <i class="iconfont">&#xe62c;</i>
+            <p>商城</p>
+        </div>
+        <div b="5">
+            <i class="iconfont">&#xe6aa;</i>
+            <p>战绩</p>
+        </div>
+    </footer>
+</div>
+</body>
+</html>
+<script src="../js/jquery-3.3.1.min.js"></script>
+<script src="../js/swiper.min.js"></script>
+<script src="../js/pub.js"></script>
+<script language="JavaScript">
+    $(function(){
+        $(".s1").children("div").each(function(){
+            $(this).click(function(){
+                $(this)[0].style.color="#53a6a1"
+                $(this).siblings().css({
+                    color:"#7e8b8d"
+                })
+                $(".footercolor").animate({
+                    left:60*$(this).attr("num")+160+"px"
+                },200)
+            })
+        })
+        var swiper = new Swiper('.s2', {
+            spaceBetween: 8,
+            loop: true,
+            slidesPerView: 'auto',
+            centeredSlides: true,
+            autoplay: {
+                delay: 2000,
+                disableOnInteraction: false,
+            },
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            }
+        });
+
+        // let translateX=Number($(".swiper-wrapper")[0].style.transform.substring(13,17))
+
+
+    })
+
+
+</script>

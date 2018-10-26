@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html >
+<head>
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <link rel="stylesheet" href="../css/base.css">
+    <link rel="stylesheet" href="../css/start.css">
+    <title>wegame</title>
+</head>
+<body>
+    <div id="bgI">
+        <div class="fadein" style="display: none;">
+                <img class="btnImg enter" src="../img/bg2.png">
+                <p class="enter">游客进入<img src="../img/b1.png"></p>
+            <div class="fugai" ></div>
+        </div>
+    </div>
+</body>
+</html>
+<script language="JavaScript" src="../js/jquery-3.3.1.min.js"></script>
+<script language="JavaScript">
+    $(function(){
+        $(".fadein").delay(1500).fadeIn(500);
+        $(".enter").click(function(){
+            location.href="index1.html";
+        })
+    })
+</script>
