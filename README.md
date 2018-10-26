@@ -1,2 +1,0 @@
-# wegame
-play show time
