@@ -49,6 +49,29 @@ main {
       float: right;
       position: relative;
       top: 6px; }
+  main .oneBox {
+    text-align: center; }
+    main .oneBox .boy-box {
+      width: 100%;
+      height: 260px;
+      margin: 0 auto;
+      margin-bottom: 16px; }
+      main .oneBox .boy-box img {
+        margin-top: 130px; }
+    main .oneBox p {
+      color: #bbc4c6;
+      font-size: 12px;
+      line-height: 1.5; }
+    main .oneBox .row-box {
+      margin-top: 18px;
+      font-size: 12px; }
+      main .oneBox .row-box span {
+        border: 1px solid #b59b72;
+        padding: 8px 5px;
+        color: #b59b72;
+        -webkit-border-radius: 4px;
+        -moz-border-radius: 4px;
+        border-radius: 4px; }
   main .content-one {
     width: 100%;
     height: 250px;
@@ -199,6 +222,33 @@ main {
           width: 19px;
           height: 13px;
           margin-top: 2px; }
+  main .three-contentBox {
+    background-color: #f0f2f6; }
+    main .three-contentBox .header-box {
+      background-color: #fff;
+      color: #384649;
+      height: 57px;
+      line-height: 57px;
+      padding: 0 16px;
+      margin-bottom: 8px;
+      font-size: 17px; }
+      main .three-contentBox .header-box .Biaoqing {
+        width: 18px;
+        height: 18px;
+        vertical-align: middle;
+        margin: 0 4px;
+        position: relative;
+        bottom: 2px; }
+      main .three-contentBox .header-box .there {
+        width: 14px;
+        height: 14px;
+        vertical-align: middle;
+        position: relative;
+        bottom: 1px; }
+    main .three-contentBox .next-box {
+      background-color: #fff;
+      padding: 6px 16px;
+      padding-top: 18px; }
 
 footer .second {
   color: #b59b72; }
