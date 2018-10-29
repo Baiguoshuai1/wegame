@@ -33,8 +33,10 @@ header .s1-content div:first-child .footercolor {
 
 main {
   flex: 1;
-  overflow: auto;
   background: #fff;
+}
+main .swiper-slide {
+  height: auto;
 }
 main .BQ {
   width: 42px;

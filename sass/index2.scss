@@ -32,8 +32,11 @@ header{
     }
   }
 main{
-  flex: 1;overflow:auto;
+  flex: 1;
   background: #fff;
+  .swiper-slide{
+    height: auto;
+  }
   .BQ{
     width:42px;height:42px;position:absolute;right:16px;bottom:60px;z-index: 1000;
     img{
